@@ -1,10 +1,10 @@
 def populateList():
-    file = open('../input.txt', 'r')
+    file = open('input.txt', 'r')
 
     for line in file:
-        values = line.split('   ')
-        left_list.append(int(values[0]))
-        right_list.append(int(values[1]))
+        values = list(map(int, line.split('   ')))
+        left_list.append(values[0])
+        right_list.append(values[1])
 
     file.close()
 

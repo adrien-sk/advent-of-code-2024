@@ -1,13 +1,13 @@
 from collections import defaultdict
 
 left_list, right_collection = [], defaultdict(int)
-file = open('../input.txt', 'r')
+file = open('input.txt', 'r')
 
 # Read each line in file : O(n)
 for line in file:
-    values = line.split('   ')
-    left_list.append(int(values[0]))
-    right_collection[int(values[1])] += 1
+    values = list(map(int, line.split('   ')))
+    left_list.append(values[0])
+    right_collection[values[1]] += 1
 
 file.close()
 

@@ -1,5 +1,5 @@
 def populateList():
-    file = open('input.txt', 'r')
+    file = open('../input.txt', 'r')
 
     for line in file:
         values = line.split('   ')

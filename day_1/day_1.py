@@ -14,7 +14,6 @@ populateList()      # Read each line in file : O(n)
 left_list.sort()    # Sorting list : O(n Log n)
 right_list.sort()   # Sorting list : O(n Log n)
 
-p1, p2 = 0, 0
 total_distance = 0
 
 # Traverse list : O(n)

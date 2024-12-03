@@ -9,8 +9,8 @@ res = 0
 # For each string, regex to get the 2 numbers using Group, and multiply + sum to the result
 for mul in mul_list:
     pattern_groups = r"mul\((\d{1,3}),(\d{1,3})\)"
-    test = re.match(pattern_groups, mul)
-    num1, num2 = test.groups()
+    match = re.match(pattern_groups, mul)
+    num1, num2 = match.groups()
     res += int(num1) * int(num2)
 
 print(res)
